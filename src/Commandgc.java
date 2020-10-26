@@ -45,7 +45,7 @@ public class Commandgc extends EssentialsCommand {
         }));
         List < World > worlds = server.getWorlds();
         for (World w: worlds) {
-            if (Integer.valueOf((w.getLoadedChunks()).length) == 0) //IF world have 0 LoadedChunks - it will skipped from for
+            if (Integer.valueOf((w.getLoadedChunks()).length) == 0) //IF world has 0 LoadedChunks - it will skipped from for
                 continue;
             String worldType = "World";
             switch (w.getEnvironment()) {
